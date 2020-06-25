@@ -12,9 +12,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('Access Brandywine'),
-          backgroundColor: Colors.grey[900],
-        ),
+            backgroundColor: Colors.grey[900],
+            title: Text('Access Brandywine',
+                style: TextStyle(
+                  fontFamily: 'Lobster',
+                  fontSize: 28.00,
+                  fontWeight: FontWeight.bold,
+                ))),
         body: Image(
           image: AssetImage('images/BrandywineRiver.jpg'),
           color: Color.fromRGBO(255, 255, 255, 0.2),
@@ -29,8 +33,13 @@ class MyApp extends StatelessWidget {
               onPressed: () {
                 print('Thanks for clicking');
               },
-              child: Text('Enter Email'),
-              color: Colors.white30),
+              child: Text(
+                'Enter Email',
+                style: TextStyle(
+                    fontFamily: 'Lobster',
+                    fontSize: 20.00,
+                    color: Colors.black),
+              )),
         ),
       ),
     );
