@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
                   fontSize: 28.00,
                   fontWeight: FontWeight.bold,
                 ))),
-        body: Image(
+        body: Container(
+            child: Image(
           image: AssetImage('images/BrandywineRiver.jpg'),
           color: Color.fromRGBO(255, 255, 255, 0.2),
           colorBlendMode: BlendMode.modulate,
@@ -27,9 +28,10 @@ class MyApp extends StatelessWidget {
           height: double.infinity,
           width: double.infinity,
           alignment: Alignment.center,
-        ),
+        )),
         floatingActionButton: Center(
           child: RaisedButton(
+              color: Color.fromRGBO(255, 255, 255, 0.8),
               onPressed: () {
                 print('Thanks for clicking');
               },
