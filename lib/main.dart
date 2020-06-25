@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(
@@ -17,6 +18,14 @@ void main() {
           height: double.infinity,
           width: double.infinity,
           alignment: Alignment.center,
+        ),
+        floatingActionButton: Center(
+          child: RaisedButton(
+              onPressed: () {
+                print('Thanks for clicking');
+              },
+              child: Text('Enter Email'),
+              color: Colors.white30),
         ),
       ),
     ),
